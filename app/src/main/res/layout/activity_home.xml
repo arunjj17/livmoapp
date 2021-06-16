@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/proj"/>
+       <androidx.cardview.widget.CardView
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-40dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="4dp"
+           app:cardBackgroundColor="@color/black"
+
+        app:cardElevation="4dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="10dp"
+            android:orientation="vertical"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="WELCOME USER"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Large"
+                >
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp">
+                    </ImageView>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="-120dp"
+        android:paddingStart="20dp"
+        android:orientation="vertical"
+        android:paddingEnd="20dp"
+        android:background="#FCFDFF"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="YOUR WATCHED VIDEOS"
+            android:textColor="@color/black"
+            style="@style/ShapeAppearance.MaterialComponents.MediumComponent">
+
+        </TextView>
+
+        <include
+            layout="@layout/vid1_home"/>
+        <include
+            layout="@layout/vid2_home"/>
+        <include
+            layout="@layout/vid3_home"/>
+
+         </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:gravity="center"
+        android:paddingEnd="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENJOY YOUR MOMENTS"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:fontFamily="cursive"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLICK FOR LIVE WEDDINGS"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:fontFamily="cursive"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JOIN LIVE"
+            android:textColor="@color/white"></Button>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
